@@ -4,7 +4,6 @@
         {
             return new IdentityError { Code = "PasswordRequiresUniqueChars", Description = $"En az {uniqueChars} farklı karakter içermelidir."};
         }
-    
         public override IdentityError DuplicateEmail(string email)
         {
             return new IdentityError { Code = "DublicateEmail", Description = $"Bu email {email} adresine ait bir hesap zaten var."};
